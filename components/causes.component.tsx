@@ -2,6 +2,7 @@ import {useEffect} from "react";
 
 const Causes = () => {
     const carouselCause = () => {
+        // @ts-ignore
         $('.carousel-cause').owlCarousel({
             autoplay: true,
             center: true,
