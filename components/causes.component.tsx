@@ -73,8 +73,8 @@ const Causes = () => {
                                         <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
                                         <div className="progress custom-progress-success">
                                             <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow="28" aria-valuemin="0"
-                                                 aria-valuemax="100"/>
+                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
+                                                 aria-valuemax={100}/>
                                         </div>
                                         <span className="fund-raised d-block">$12,000 raised of $30,000</span>
                                     </div>
