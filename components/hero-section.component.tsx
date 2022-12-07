@@ -2,15 +2,19 @@ import {useEffect} from "react";
 
 const HeroSection = () => {
     const counter = () => {
-            $('#section-counter').waypoint( function( direction ) {
+            // @ts-ignore
+        $('#section-counter').waypoint( function( direction ) {
 
-                if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+                // @ts-ignore
+            if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 
+                    // @ts-ignore
                     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
                     $('.number').each(function(){
                         var $this = $(this),
                             num = $this.data('number');
                         console.log(num);
+                        // @ts-ignore
                         $this.animateNumber(
                             {
                                 number: num,
