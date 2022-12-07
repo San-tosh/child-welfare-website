@@ -53,7 +53,7 @@ const Footer = ()=>{
                         <p>
                             Copyright &copy;
                             {year} &nbsp;&nbsp;All rights reserved
-                            <a href="https://colorlib.com" style={{visibility: "hidden"}} target="_blank">Colorlib</a>
+                            <a href="https://colorlib.com" style={{visibility: "hidden"}} target="_blank" rel="noreferrer">Colorlib</a>
                             </p>
                     </div>
                 </div>
