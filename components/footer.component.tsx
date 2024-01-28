@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = ()=>{
     const year = new Date().getFullYear();
     return (
@@ -8,13 +10,12 @@ const Footer = ()=>{
                     <div className="col-md-5">
                         <div className="ftco-footer-widget mb-4">
                             <h2 className="ftco-heading-2">About Us</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                                there live the blind texts.</p>
+                            <p>At the heart of our mission is a commitment to fostering a nurturing environment that empowers every child to reach their full potential.</p>
                             <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                                <li className="ftco-animate"><a href="#"><span className="icon-twitter"/></a></li>
-                                <li className="ftco-animate"><a href="#"><span className="icon-facebook"/></a>
+                                <li className="ftco-animate fadeInUp ftco-animated"><a href="#"><span className="icon-twitter"/></a></li>
+                                <li className="ftco-animate fadeInUp ftco-animated"><a href="#"><span className="icon-facebook"/></a>
                                 </li>
-                                <li className="ftco-animate"><a href="#"><span className="icon-instagram"/></a>
+                                <li className="ftco-animate fadeInUp ftco-animated"><a href="#"><span className="icon-instagram"/></a>
                                 </li>
                             </ul>
                         </div>
@@ -23,8 +24,8 @@ const Footer = ()=>{
                         <div className="ftco-footer-widget mb-4 ml-md-4">
                             <h2 className="ftco-heading-2">Site Links</h2>
                             <ul className="list-unstyled">
-                                <li><a href="#" className="py-2 d-block">Home</a></li>
-                                <li><a href="#" className="py-2 d-block">About</a></li>
+                                <li><Link href={"/"} className="py-2 d-block">Home</Link></li>
+                                <li style={{marginTop:"9px"}}><Link href={"/about"} className="py-2 d-block">About</Link></li>
                                 <li><a href="#" className="py-2 d-block">Donate</a></li>
                                 <li><a href="#" className="py-2 d-block">Causes</a></li>
                                 <li><a href="#" className="py-2 d-block">Event</a></li>

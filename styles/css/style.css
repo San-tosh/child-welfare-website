@@ -3523,6 +3523,8 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9); }
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: rgba(0, 0, 0, 0.9); }
+.navbar-light .navbar-contact span{
+  color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5); }
@@ -3552,6 +3554,8 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
+  color: #fff; }
+.navbar-dark .navbar-contact span {
   color: #fff; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
@@ -7316,9 +7320,14 @@ h1, h2, h3, h4, h5,
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
+.ftco-navbar-light .navbar-contact {
+  color: #fff; }
     @media (min-width: 768px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
+@media (min-width: 768px) {
+  .ftco-navbar-light .navbar-contact {
+    color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
     padding-top: .9rem;
@@ -7394,10 +7403,11 @@ h1, h2, h3, h4, h5,
     right: 0;
     left: 0;
     top: 0;
-    margin-top: -130px;
+    margin-top: -190px;
     background: #fff !important;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
+    /*-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+  }
     .ftco-navbar-light.scrolled .nav-item.active > a {
       color: #f86f2d !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
@@ -7455,6 +7465,8 @@ h1, h2, h3, h4, h5,
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
       color: #000; }
+.ftco-navbar-light.scrolled .navbar-contact span{
+  color: #000; }
 
 .navbar-brand {
   font-weight: 700;
@@ -9160,3 +9172,8 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+.nav-contact > hr {
+  width: 100%;
+}

@@ -1,5 +1,37 @@
 import {useEffect} from "react";
 
+const services = [
+    {
+        name: "General Physician",
+        description: "Our dedicated General Physician services for children with cerebral palsy offer specialized care, tailored medical support ensuring their overall well-being.",
+        image: "cause-2.jpg"
+    },
+    {
+        name: "Psychiatric Consultation",
+        description: "Expert psychiatric consultations for cerebral palsy children, fostering mental well-being and tailored support. Our compassionate approach ensures holistic care.",
+        image: "cause-1.jpg"
+    },
+    {
+        name: "Neuro Pediatric Consultation",
+        description: "Specialized Neuro Pediatric consultations for cerebral palsy children, ensuring comprehensive care and expert guidance for optimal developmental support and health.",
+        image: "cause-3.jpg"
+    },
+    {
+        name: "Orthopedic Consultation",
+        description: "Tailored Orthopedic consultations for cerebral palsy children, addressing musculoskeletal needs with precision for improved mobility and well-being.",
+        image: "cause-4.jpg"
+    },
+    {
+        name: "Physiotherapy",
+        description: "Expert physiotherapy services for cerebral palsy children, promoting mobility, strength, and independence through personalized care and dedicated support.",
+        image: "cause-5.jpg"
+    },
+    {
+        name: "Speech & Vision Therapy",
+        description: "Comprehensive Speech and Vision Therapy for cerebral palsy children, fostering communication skills and enhancing visual abilities for improved overall development.",
+        image: "cause-6.jpg"
+    }
+]
 const Causes = () => {
     const carouselCause = () => {
         // @ts-ignore
@@ -38,116 +70,26 @@ const Causes = () => {
             <div className="container-fluid">
                 <div className="row justify-content-center mb-5 pb-3">
                     <div className="col-md-5 heading-section ftco-animate text-center fadeInUp ftco-animated">
-                        <h2 className="mb-4">Our Causes</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
+                        <h2 className="mb-4">Our Services</h2>
+                        <p>We provide comprehensive clinical care and support for children with Cerebral Palsy ,Autism, Down syndrome, Intellectual disabilities and other neurological disorders.</p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12 ftco-animate fadeInUp ftco-animated">
                         <div className="carousel-cause owl-carousel owl-loaded owl-drag">
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-1.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
+                            {services.map((service)=>{
+                                return (
+                                    <div className="item" key={service.name}>
+                                        <div className="cause-entry">
+                                            <span className="img" style={{backgroundImage:`url(${service.image})`}}/>
+                                            <div className="text p-3 p-md-4">
+                                                <h3>{service.name}</h3>
+                                                <p>{service.description}</p>
+                                            </div>
                                         </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-2.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
-                                        </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-3.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
-                                        </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-4.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
-                                        </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-5.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
-                                        </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div className="cause-entry">
-                                    <a href="#" className="img" style={{backgroundImage:"url(cause-6.jpg)"}}/>
-                                    <div className="text p-3 p-md-4">
-                                        <h3><a href="#">Clean water for the urban area</a></h3>
-                                        <p>Even the all-powerful Pointing has no control about the blind texts it is an
-                                            almost unorthographic life</p>
-                                        <span className="donation-time mb-3 d-block">Last donation 1w ago</span>
-                                        <div className="progress custom-progress-success">
-                                            <div className="progress-bar bg-primary" role="progressbar"
-                                                 style={{width: "28%"}} aria-valuenow={28} aria-valuemin={0}
-                                                 aria-valuemax={100}/>
-                                        </div>
-                                        <span className="fund-raised d-block">$12,000 raised of $30,000</span>
-                                    </div>
-                                </div>
-                            </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

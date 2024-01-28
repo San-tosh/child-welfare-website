@@ -8,8 +8,7 @@ const SectionFirst = () => {
                             <div className="icon d-flex mb-3"><span className="flaticon-donation-1"/></div>
                             <div className="media-body pl-4">
                                 <h3 className="heading">Make Donation</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <p>Join us in making a lasting impact on their lives. Your generosity brings hope, joy, and brighter futures.</p>
                             </div>
                         </div>
                     </div>
@@ -18,8 +17,7 @@ const SectionFirst = () => {
                             <div className="icon d-flex mb-3"><span className="flaticon-charity"/></div>
                             <div className="media-body pl-4">
                                 <h3 className="heading">Become A Volunteer</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <p>Join our compassionate community, contribute to meaningful programs, and help create a brighter future.</p>
                             </div>
                         </div>
                     </div>
@@ -28,8 +26,7 @@ const SectionFirst = () => {
                             <div className="icon d-flex mb-3"><span className="flaticon-donation"/></div>
                             <div className="media-body pl-4">
                                 <h3 className="heading">Sponsorship</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <p>Empower kids with cerebral palsy. Sponsor for transformative impact today.</p>
                             </div>
                         </div>
                     </div>

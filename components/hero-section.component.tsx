@@ -48,7 +48,7 @@ const HeroSection = () => {
                         <div className="block-18 color-2 align-items-stretch">
                             <div className="text">
                                 <h3 className="mb-4">Donate Money</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                                <p>Your contribution enables vital programs and therapies, providing these resilient kids with the care they deserve.</p>
                                 <p><a href="#" className="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
                         <div className="block-18 color-3 align-items-stretch">
                             <div className="text">
                                 <h3 className="mb-4">Be a Volunteer</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts.</p>
+                                <p>Become a beacon of hope for children with cerebral palsy by volunteering with Marloes Day Care Centre.</p>
                                 <p><a href="#" className="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
                             </div>
                         </div>

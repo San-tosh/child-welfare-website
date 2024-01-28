@@ -4,7 +4,11 @@ import Script from 'next/script'
 export default function Document() {
     return (
         <Html>
-            <Head/>
+             <Head>
+                     <link rel="icon" href="/favicon.ico"/>
+                     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet"/>
+                     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet"/>
+             </Head>
             <body>
             <Main />
             <NextScript />

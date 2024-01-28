@@ -31,10 +31,6 @@ const Home: NextPage = () => {
                 <meta name="description" content="Marloes Day Care Centre"/>
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                <link rel="icon" href="/favicon.ico"/>
-                <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet"/>
-
             </Head>
             {/*//components*/}
             <Nav/>
@@ -42,9 +38,9 @@ const Home: NextPage = () => {
             <HeroSectionComponentWithNoSSR/>
             <SectionFirst/>
             <CausesComponentWithNoSSR/>
-            <DonatedComponent/>
+            {/*<DonatedComponent/>*/}
             <GalleryComponent/>
-            <RecentBlog/>
+            {/*<RecentBlog/>*/}
             <LatestEvent/>
             <Volunteer/>
             <Footer/>

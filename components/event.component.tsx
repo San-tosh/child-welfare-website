@@ -12,10 +12,10 @@ const Event = ({image,date,heading,time,description,location}: EventType) => {
                         <div><a href="#">{date}</a></div>
                     </div>
                     <h3 className="heading mb-4"><a href="#">{heading}</a></h3>
-                    <p className="time-loc"><span className="mr-2"><i className="icon-clock-o"/> {time}</span>
+                    <p className="time-loc">
                         <span><i className="icon-map-o"/> {location}</span></p>
                     <p>{description}</p>
-                    <p><a href="event.html">Join Event <i className="ion-ios-arrow-forward"/></a></p>
+                    <p><a href="event.html">Read more <i className="ion-ios-arrow-forward"/></a></p>
                 </div>
             </div>
         </div>
