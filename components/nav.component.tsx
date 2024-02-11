@@ -41,11 +41,12 @@ return (
                     <li className={`nav-item ${router.pathname === "/" ? "active" : ""}`}><a href="#" onClick={()=>goToPage('/')} className="nav-link">Home</a></li>
                     <li className={`nav-item ${router.pathname === "/about" ? "active" : ""}`}><a style={{cursor: 'pointer'}} onClick={()=>goToPage('about')} className="nav-link">About</a></li>
                     <li className={`nav-item ${router.pathname === "/services" ? "active" : ""}`}>
-                        <a style={{cursor: 'pointer'}} onClick={()=>goToPage('about')} className="nav-link">Services</a></li>
+                        <a style={{cursor: 'pointer'}} onClick={()=>goToPage('services')} className="nav-link">Services</a></li>
                     <li className="nav-item"><a href="donate.html" className="nav-link">Donate</a></li>
                     <li className="nav-item"><a href="gallery.html" className="nav-link">Gallery</a></li>
                     <li className="nav-item"><a href="event.html" className="nav-link">Events</a></li>
-                    <li className="nav-item"><a href="contact.html" className="nav-link">Contact</a></li>
+                    <li className={`nav-item ${router.pathname === "/contact" ? "active" : ""}`}>
+                        <a style={{cursor: 'pointer'}} onClick={()=>goToPage('contact')} className="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>

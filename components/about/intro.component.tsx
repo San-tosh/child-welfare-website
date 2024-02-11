@@ -6,7 +6,7 @@ export function Intro() {
                     <div className="row d-flex">
                         <div className="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
                             <div className="img img-about align-self-stretch"
-                                 style={{backgroundImage: `url(bg_3.jpg)`, width: "100%"}}></div>
+                                 style={{backgroundImage: `url(about_us.jpg)`, width: "100%"}}></div>
                         </div>
                         <div className="col-md-6 pl-md-5 ftco-animate fadeInUp ftco-animated">
                             <h2 className="mb-4">Welcome to Marloes Day Care Centre established Since 2018</h2>

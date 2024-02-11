@@ -26,6 +26,7 @@ const Footer = ()=>{
                             <ul className="list-unstyled">
                                 <li><Link href={"/"} className="py-2 d-block">Home</Link></li>
                                 <li style={{marginTop:"9px"}}><Link href={"/about"} className="py-2 d-block">About</Link></li>
+                                <li style={{marginTop:"9px"}}><Link href={"/services"} className="py-2 d-block">Services</Link></li>
                                 <li><a href="#" className="py-2 d-block">Donate</a></li>
                                 <li><a href="#" className="py-2 d-block">Causes</a></li>
                                 <li><a href="#" className="py-2 d-block">Event</a></li>

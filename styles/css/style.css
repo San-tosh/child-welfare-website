@@ -9177,3 +9177,10 @@ textarea.form-control {
 .nav-contact > hr {
   width: 100%;
 }
+
+/* Media query to hide the class when screen width is less than 600px */
+@media screen and (max-width: 600px) {
+  .navbar-contact {
+    display: none !important; /* Hide the class */
+  }
+}
