@@ -12,13 +12,13 @@ const Main = ()=>{
                     <p><span>Address:</span><br/>Kapan, BudhanilKantha - Nepal</p>
                 </div>
                 <div className="col-md-3">
-                    <p><span>Phone:</span> <a href="tel://1234567920"><br/>+ 1235 2355 98</a></p>
+                    <p><span>Phone:</span> <a href="tel://1234567920"><br/>+ 01-4813219</a></p>
                 </div>
                 <div className="col-md-3">
-                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">contact@marloesdaycarecentre.com</a></p>
+                    <p><span>Email:</span> <a href="mailto:info@marloesdaycarecentre.org">info@marloesdaycarecentre.org</a></p>
                 </div>
                 <div className="col-md-3">
-                    <p><span>Website</span> <a href="#">www.marloesdaycarecentre.com</a></p>
+                    <p><span>Website</span> <a href="http://www.marloesdaycarecentre.org">www.marloesdaycarecentre.org</a></p>
                 </div>
             </div>
             <div className="row block-9">

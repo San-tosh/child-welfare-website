@@ -10,7 +10,6 @@ import '../styles/css/magnific-popup.css'
 import '../styles/css/aos.css'
 import '../styles/css/ionicons.min.css'
 
-// import '../styles/css/bootstrap-datepicker.css'
 import '../styles/css/jquery.timepicker.css'
 
 import '../styles/css/style.css'

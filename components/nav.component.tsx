@@ -8,7 +8,6 @@ const Nav = ()=>{
         router.push(path);
     }
 
-    console.log("router pathname",router.pathname === "/about")
 return (
     <>
     <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style={{flexDirection:"column"}}>
@@ -16,15 +15,14 @@ return (
             <div className="navbar-contact" style={{display:"flex",justifyContent: "space-between",alignItems: "center", minWidth:"99%",flexWrap: "wrap"}}>
                 <div style={{display:"flex",color:"white", alignItems: "center", gap: 19}}>
                     <div><span className="icon icon-map-marker" style={{marginRight: "10px"}}/><span className="text" >Kapan,Kathmandu - Nepal</span></div>
-                    <div><span className="icon icon-phone" style={{marginRight: "10px"}}/><span className="text">9841XXXXXX</span></div>
+                    <div><span className="icon icon-phone" style={{marginRight: "10px"}}/><span className="text">01-4813219</span></div>
                     <div><span className="icon icon-envelope" style={{marginRight: "10px"}}/><span
-                        className="text">info@yourdomain.com</span>
+                        className="text">info@marloesdaycarecentre.org</span>
                     </div>
                 </div>
                 <div style={{display:"flex",color:"white", alignItems: "center", gap: 10}}>
-                    <a href="#"><span className="icon icon-twitter" style={{marginRight: "10px"}}/></a>
-                    <a href="#"><span className="icon icon-facebook" style={{marginRight: "10px"}}/></a>
-                    <a href="#"><span className="icon icon-instagram" style={{marginRight: "10px"}}/></a>
+                    <a href="https://www.facebook.com/p/Marloes-Daycare-Center-for-Cerebral-Palsy-Children-100080394168003/"><span className="icon icon-facebook" style={{marginRight: "10px"}}/></a>
+                    <a href="https://www.facebook.com/p/Marloes-Daycare-Center-for-Cerebral-Palsy-Children-100080394168003/"><span className="icon icon-instagram" style={{marginRight: "10px"}}/></a>
                 </div>
             </div>
         </div>
@@ -38,15 +36,26 @@ return (
 
             <div className="collapse navbar-collapse" id="ftco-nav">
                 <ul className="navbar-nav ml-auto">
-                    <li className={`nav-item ${router.pathname === "/" ? "active" : ""}`}><a href="#" onClick={()=>goToPage('/')} className="nav-link">Home</a></li>
-                    <li className={`nav-item ${router.pathname === "/about" ? "active" : ""}`}><a style={{cursor: 'pointer'}} onClick={()=>goToPage('about')} className="nav-link">About</a></li>
+                    <li className={`nav-item ${router.pathname === "/" ? "active" : ""}`}><a href="#"
+                                                                                             onClick={() => goToPage('/')}
+                                                                                             className="nav-link">Home</a>
+                    </li>
+                    <li className={`nav-item ${router.pathname === "/about" ? "active" : ""}`}><a
+                        style={{cursor: 'pointer'}} onClick={() => goToPage('about')} className="nav-link">About</a>
+                    </li>
                     <li className={`nav-item ${router.pathname === "/services" ? "active" : ""}`}>
-                        <a style={{cursor: 'pointer'}} onClick={()=>goToPage('services')} className="nav-link">Services</a></li>
-                    <li className="nav-item"><a href="donate.html" className="nav-link">Donate</a></li>
-                    <li className="nav-item"><a href="gallery.html" className="nav-link">Gallery</a></li>
-                    <li className="nav-item"><a href="event.html" className="nav-link">Events</a></li>
+                        <a style={{cursor: 'pointer'}} onClick={() => goToPage('services')}
+                           className="nav-link">Services</a></li>
+                    <li className={`nav-item ${router.pathname === "/donate" ? "active" : ""}`}>
+                        <a style={{cursor: 'pointer'}} onClick={() => goToPage('donate')}
+                           className="nav-link">Donate</a></li>
+                    <li className={`nav-item ${router.pathname === "/gallery" ? "active" : ""}`}>
+                        <a style={{cursor: 'pointer'}} onClick={() => goToPage('gallery')}
+                           className="nav-link">Gallery</a></li>
+                    {/*<li className="nav-item"><a href="event.html" className="nav-link">Events</a></li>*/}
                     <li className={`nav-item ${router.pathname === "/contact" ? "active" : ""}`}>
-                        <a style={{cursor: 'pointer'}} onClick={()=>goToPage('contact')} className="nav-link">Contact</a></li>
+                        <a style={{cursor: 'pointer'}} onClick={() => goToPage('contact')}
+                           className="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
