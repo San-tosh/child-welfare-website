@@ -31,6 +31,7 @@ export function Intro() {
                                     </li>
                                 </ul>
                                 <p className="mt-4">
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     For international donations, please ensure to use the correct SWIFT code and include your reference as <em>"Marloes Donation"</em> in the transfer note.
                                 </p>
                             </div>
