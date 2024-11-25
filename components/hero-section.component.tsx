@@ -1,6 +1,14 @@
 import {useEffect} from "react";
+import {useRouter} from "next/router";
+import {ROUTE_CONTACT_PAGE, ROUTE_DONATE_PAGE} from "../constants/routes";
 
 const HeroSection = () => {
+    const router = useRouter();
+
+    const goToPage = (path: string) => {
+        router.push(path);
+    }
+
     const counter = () => {
             // @ts-ignore
         $('#section-counter').waypoint( function( direction ) {
@@ -49,7 +57,7 @@ const HeroSection = () => {
                             <div className="text">
                                 <h3 className="mb-4">Donate Money</h3>
                                 <p>Your contribution enables vital programs and therapies, providing these resilient kids with the care they deserve.</p>
-                                <p><a href="#" className="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
+                                <p><a href="#" onClick={()=>goToPage(ROUTE_DONATE_PAGE)} className="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
                             </div>
                         </div>
                     </div>
@@ -58,7 +66,7 @@ const HeroSection = () => {
                             <div className="text">
                                 <h3 className="mb-4">Be a Volunteer</h3>
                                 <p>Become a beacon of hope for children with cerebral palsy by volunteering with Marloes Day Care Centre.</p>
-                                <p><a href="#" className="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
+                                <p><a href="#" onClick={()=>goToPage(ROUTE_CONTACT_PAGE)} className="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
                             </div>
                         </div>
                     </div>

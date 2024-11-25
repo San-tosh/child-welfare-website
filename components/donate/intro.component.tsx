@@ -15,19 +15,19 @@ export function Intro() {
                                 <ul className="list-unstyled mt-4">
                                     <li className="mb-3">
                                         <FaUniversity className="text-primary mr-2" />
-                                        <strong>Bank Name:</strong> XYZ Bank Nepal
+                                        <strong>Bank Name:</strong> Marlowe Day Care Centre
                                     </li>
                                     <li className="mb-3">
                                         <FaMoneyCheck className="text-primary mr-2" />
-                                        <strong>Account Number:</strong> 1234567891011
+                                        <strong>Account Number:</strong> 03801040255981
                                     </li>
                                     <li className="mb-3">
                                         <FaCode className="text-primary mr-2" />
-                                        <strong>Account Code:</strong> 0123456789
+                                        <strong>Account Code:</strong> 30310372790501
                                     </li>
                                     <li className="mb-3">
                                         <FaCode className="text-primary mr-2" />
-                                        <strong>SWIFT Code:</strong> XYZBNPKA
+                                        <strong>SWIFT Code:</strong> NIBLNPKT
                                     </li>
                                 </ul>
                                 <p className="mt-4">

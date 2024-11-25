@@ -15,7 +15,7 @@ return (
             <div className="navbar-contact" style={{display:"flex",justifyContent: "space-between",alignItems: "center", minWidth:"99%",flexWrap: "wrap"}}>
                 <div style={{display:"flex",color:"white", alignItems: "center", gap: 19}}>
                     <div><span className="icon icon-map-marker" style={{marginRight: "10px"}}/><span className="text" >Kapan,Kathmandu - Nepal</span></div>
-                    <div><span className="icon icon-phone" style={{marginRight: "10px"}}/><span className="text">01-4813219</span></div>
+                    <div><span className="icon icon-phone" style={{marginRight: "10px"}}/><span className="text">9843353175</span></div>
                     <div><span className="icon icon-envelope" style={{marginRight: "10px"}}/><span
                         className="text">info@marloesdaycarecentre.org</span>
                     </div>
@@ -46,6 +46,9 @@ return (
                     <li className={`nav-item ${router.pathname === "/services" ? "active" : ""}`}>
                         <a style={{cursor: 'pointer'}} onClick={() => goToPage('services')}
                            className="nav-link">Services</a></li>
+                    <li className={`nav-item ${router.pathname === "/events" ? "active" : ""}`}>
+                        <a style={{cursor: 'pointer'}} onClick={() => goToPage('events')}
+                           className="nav-link">Events</a></li>
                     <li className={`nav-item ${router.pathname === "/donate" ? "active" : ""}`}>
                         <a style={{cursor: 'pointer'}} onClick={() => goToPage('donate')}
                            className="nav-link">Donate</a></li>

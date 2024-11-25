@@ -40,7 +40,7 @@ const Footer = ()=>{
                                 <ul>
                                     <li><span className="icon icon-map-marker"/><span className="text">Kapan, Kathmandu, Nepal</span>
                                     </li>
-                                    <li><span className="icon icon-phone"/><span className="text">01-4813219</span></li>
+                                    <li><span className="icon icon-phone"/><span className="text">9843353175</span></li>
                                     <li><span className="icon icon-envelope"/><span
                                         className="text">info@marloesdaycarecentre.org</span></li>
                                 </ul>
